@@ -5,6 +5,7 @@
     <button-cmp :to="{ name: 'page' }" theme="success" size="large" />
 
     <button-cmp @click.prevent="clicked"/>
+    <button-cmp disabled />
   </div>
 </template>
 

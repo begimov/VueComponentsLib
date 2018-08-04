@@ -3,7 +3,7 @@
         class="btn"
         @click.native="clicked"
         :class="[ 
-            themes[theme], sizes[size]
+            themes[theme], sizes[size], {'disabled': disabled}
         ]" 
         :to="to">
         PAGE
@@ -41,7 +41,12 @@ export default {
             default() {
                 return { name: 'home' }
             }
-        }
+        },
+        disabled: {
+            type: Boolean,
+            required: false,
+            default: false
+        },
     },
     methods: {
         clicked (e) {
