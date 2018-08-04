@@ -1,7 +1,9 @@
 <template>
     <router-link 
         class="btn"
-        :class="{ 'btn-secondary': secondary, 'btn-success': success }" 
+        :class="[ 
+            themes[theme], sizes[size]
+        ]" 
         :to="to">
         PAGE
     </router-link>
@@ -9,16 +11,28 @@
 
 <script>
 export default {
+    data() {
+        return {
+            themes: {
+                secondary: 'btn-secondary',
+                success: 'btn-success',
+            },
+            sizes: {
+                normal: '',
+                large: 'btn-lg',
+            },
+        }
+    },
     props: {
-        secondary: {
+        theme: {
             required: false,
-            type: Boolean,
-            default: true
+            type: String,
+            default: 'secondary'
         },
-        success: {
+        size: {
             required: false,
-            type: Boolean,
-            default: false
+            type: String,
+            default: 'normal'
         },
         to: {
             type: Object,
