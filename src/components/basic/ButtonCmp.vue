@@ -1,6 +1,7 @@
 <template>
     <router-link 
         class="btn"
+        @click.native="clicked"
         :class="[ 
             themes[theme], sizes[size]
         ]" 
@@ -40,6 +41,11 @@ export default {
             default() {
                 return { name: 'home' }
             }
+        }
+    },
+    methods: {
+        clicked (e) {
+            this.$emit('click', e)
         }
     }
 }
