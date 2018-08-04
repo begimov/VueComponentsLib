@@ -12,6 +12,7 @@
     </p>
 
     <p>
+      <form-label-cmp for="password">Password:</form-label-cmp>
       <input-cmp type="password" name="password" v-model="form.password" placeholder="Enter password..."/>
       <input-cmp name="name" />
     </p>
@@ -22,6 +23,7 @@
 // @ is an alias to /src
 import ButtonCmp from '@/components/basic/ButtonCmp'
 import InputCmp from '@/components/basic/InputCmp'
+import FormLabelCmp from '@/components/basic/FormLabelCmp'
 
 export default {
   name: 'home',
@@ -34,7 +36,8 @@ export default {
   },
   components: {
     ButtonCmp,
-    InputCmp
+    InputCmp,
+    FormLabelCmp
   },
   methods: {
     clicked() {
