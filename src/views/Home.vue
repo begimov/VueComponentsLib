@@ -1,6 +1,6 @@
 <template>
   <div >
-    <button-cmp />
+    <button-cmp  :to="{ name: 'page' }" />
   </div>
 </template>
 
