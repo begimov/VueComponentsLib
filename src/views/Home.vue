@@ -13,6 +13,7 @@
 
     <p>
       <input-cmp type="password" name="password" />
+      <input-cmp name="name" />
     </p>
   </div>
 </template>
