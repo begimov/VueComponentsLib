@@ -5,6 +5,7 @@
             :id="name"
             :type="inputType"
             class="form-control"
+            @input="changed"
         >
         <p>
             <a href="#" v-if="type === 'password'" @click.prevent="showPassword = !showPassword">
@@ -38,6 +39,11 @@ export default {
         },
         showPasswordSwitchText () {
             return this.showPassword ? 'hide' : 'show'
+        }
+    },
+    methods: {
+        changed (e) {
+            this.$emit('input', e.target.value)
         }
     }
 }

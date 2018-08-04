@@ -12,7 +12,7 @@
     </p>
 
     <p>
-      <input-cmp type="password" name="password" />
+      <input-cmp type="password" name="password" v-model="form.password" />
       <input-cmp name="name" />
     </p>
   </div>
@@ -25,6 +25,13 @@ import InputCmp from '@/components/basic/InputCmp'
 
 export default {
   name: 'home',
+  data () {
+    return {
+      form: {
+        password: ''
+      }
+    }
+  },
   components: {
     ButtonCmp,
     InputCmp
