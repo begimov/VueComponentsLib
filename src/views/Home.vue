@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       form: {
-        password: ''
+        password: 'abs'
       }
     }
   },

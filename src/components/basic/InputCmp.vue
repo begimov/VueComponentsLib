@@ -4,6 +4,7 @@
             :name="name"
             :id="name"
             :type="inputType"
+            :value="value"
             class="form-control"
             @input="changed"
         >
@@ -23,6 +24,11 @@ export default {
         }
     },
     props: {
+        'value': {
+            required: false,
+            type: String,
+            default: ''
+        },
         'name': {
             required: true,
             type: String
