@@ -1,6 +1,7 @@
 <template>
     <div>
-        <input 
+        <input
+            v-bind="$attrs" 
             :name="name"
             :id="name"
             :type="inputType"
@@ -51,6 +52,9 @@ export default {
         changed (e) {
             this.$emit('input', e.target.value)
         }
+    },
+    mounted () {
+        //
     }
 }
 </script>

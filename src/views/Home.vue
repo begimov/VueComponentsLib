@@ -12,7 +12,7 @@
     </p>
 
     <p>
-      <input-cmp type="password" name="password" v-model="form.password" />
+      <input-cmp type="password" name="password" v-model="form.password" placeholder="Enter password..."/>
       <input-cmp name="name" />
     </p>
   </div>
@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       form: {
-        password: 'abs'
+        password: ''
       }
     }
   },
