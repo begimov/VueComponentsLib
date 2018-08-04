@@ -6,7 +6,7 @@
             themes[theme], sizes[size], {'disabled': disabled}
         ]" 
         :to="to">
-        PAGE
+        <slot>VAL</slot>
     </router-link>
 </template>
 

@@ -6,6 +6,8 @@
 
     <button-cmp @click.prevent="clicked"/>
     <button-cmp disabled />
+
+    <button-cmp>PAGE</button-cmp>
   </div>
 </template>
 
