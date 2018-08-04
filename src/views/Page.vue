@@ -1,17 +1,16 @@
 <template>
   <div >
-    <button-cmp />
+    PAGE
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import ButtonCmp from '@/components/basic/ButtonCmp'
 
 export default {
-  name: 'home',
+  name: 'page',
   components: {
-    ButtonCmp
+    //
   }
 }
 </script>
