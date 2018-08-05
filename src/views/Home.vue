@@ -24,6 +24,7 @@
 
     <p>
       <signin-modal-cmp />
+      <a href="#">SIGN IN</a>
     </p>
   </div>
 </template>

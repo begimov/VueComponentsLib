@@ -8,18 +8,6 @@ import ModalCmp from '@/components/basic/ModalCmp'
 export default {
     components: {
         ModalCmp
-    },
-    props: {
-        //
-    },
-    methods: {
-        //
-    },
-    computed: {
-        //
-    },
-    mounted () {
-        //
     }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div class="modal-cmp">
+    <div class="modal-cmp" v-if="visible">
         <div class="modal-cmp-body p-4 text-center">
             <slot />
         </div>
@@ -8,17 +8,10 @@
 
 <script>
 export default {
-    props: {
-        //
-    },
-    methods: {
-        //
-    },
-    computed: {
-        //
-    },
-    mounted () {
-        //
+    data () {
+        return {
+            visible:false   
+        }
     }
 }
 </script>
