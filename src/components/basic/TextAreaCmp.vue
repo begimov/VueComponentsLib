@@ -1,14 +1,12 @@
 <template>
-    <div>
-        <input
-            v-bind="$attrs" 
-            :name="name"
-            :id="name"
-            :value="value"
-            class="form-control"
-            @input="changed"
-        >
-    </div>
+    <textarea
+        v-bind="$attrs" 
+        :name="name"
+        :id="name"
+        :value="value"
+        class="form-control"
+        @input="changed"
+    ></textarea>
 </template>
 
 <script>

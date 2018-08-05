@@ -16,6 +16,11 @@
       <input-cmp type="password" name="password" v-model="form.password" placeholder="Enter password..."/>
       <input-cmp name="name" />
     </p>
+
+    <p>
+      <form-label-cmp for="textarea">Text:</form-label-cmp>
+      <text-area-cmp name="textarea" v-model="form.text" placeholder="Enter message..."/>
+    </p>
   </div>
 </template>
 
@@ -24,20 +29,23 @@
 import ButtonCmp from '@/components/basic/ButtonCmp'
 import InputCmp from '@/components/basic/InputCmp'
 import FormLabelCmp from '@/components/basic/FormLabelCmp'
+import TextAreaCmp from '@/components/basic/TextAreaCmp'
 
 export default {
   name: 'home',
   data () {
     return {
       form: {
-        password: ''
+        password: '',
+        text: ''
       }
     }
   },
   components: {
     ButtonCmp,
     InputCmp,
-    FormLabelCmp
+    FormLabelCmp,
+    TextAreaCmp
   },
   methods: {
     clicked() {
