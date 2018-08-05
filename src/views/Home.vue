@@ -19,7 +19,7 @@
 
     <p>
       <form-label-cmp for="textarea">Text:</form-label-cmp>
-      <text-area-cmp name="textarea" v-model="form.text" placeholder="Enter message..."/>
+      <text-area-cmp name="textarea" v-model="form.text" placeholder="Enter message..." />
     </p>
   </div>
 </template>
