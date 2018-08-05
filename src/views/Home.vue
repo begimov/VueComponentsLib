@@ -21,6 +21,10 @@
       <form-label-cmp for="textarea">Text:</form-label-cmp>
       <text-area-cmp name="textarea" v-model="form.text" placeholder="Enter message..." />
     </p>
+
+    <p>
+      <modal-cmp />
+    </p>
   </div>
 </template>
 
@@ -30,6 +34,7 @@ import ButtonCmp from '@/components/basic/ButtonCmp'
 import InputCmp from '@/components/basic/InputCmp'
 import FormLabelCmp from '@/components/basic/FormLabelCmp'
 import TextAreaCmp from '@/components/basic/TextAreaCmp'
+import ModalCmp from '@/components/basic/ModalCmp'
 
 export default {
   name: 'home',
@@ -45,7 +50,8 @@ export default {
     ButtonCmp,
     InputCmp,
     FormLabelCmp,
-    TextAreaCmp
+    TextAreaCmp,
+    ModalCmp
   },
   methods: {
     clicked() {
