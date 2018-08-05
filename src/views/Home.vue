@@ -23,7 +23,7 @@
     </p>
 
     <p>
-      <modal-cmp />
+      <signin-modal-cmp />
     </p>
   </div>
 </template>
@@ -35,6 +35,7 @@ import InputCmp from '@/components/basic/InputCmp'
 import FormLabelCmp from '@/components/basic/FormLabelCmp'
 import TextAreaCmp from '@/components/basic/TextAreaCmp'
 import ModalCmp from '@/components/basic/ModalCmp'
+import SigninModalCmp from '@/components/basic/modals/SigninModalCmp'
 
 export default {
   name: 'home',
@@ -51,7 +52,8 @@ export default {
     InputCmp,
     FormLabelCmp,
     TextAreaCmp,
-    ModalCmp
+    ModalCmp,
+    SigninModalCmp
   },
   methods: {
     clicked() {

@@ -1,13 +1,14 @@
 <template>
-    <div class="modal-cmp">
-        <div class="modal-cmp-body p-4 text-center">
-            <slot />
-        </div>
-    </div>
+    <modal-cmp>SIGNIN MODAL</modal-cmp>
 </template>
 
 <script>
+import ModalCmp from '@/components/basic/ModalCmp'
+
 export default {
+    components: {
+        ModalCmp
+    },
     props: {
         //
     },
